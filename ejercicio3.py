@@ -11,3 +11,9 @@
 # 3. Muestra si es o no un palíndromo con un mensaje claro.
 
 # 👇 Aquí comienza tu código
+#input("pedir una palabra al usuario")
+palabra = "radar"
+if palabra == palabra[::-1]:
+    print("Es palindromo")
+false:
+    print("No es palindromo")

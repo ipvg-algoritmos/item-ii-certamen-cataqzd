@@ -10,3 +10,13 @@
 # 5. Todas las notas deben estar entre 1.0 y 7.0.
 
 # 👇 Aquí comienza tu código
+cantidad = int(input("¿cuantas notas quiere agregar? "))
+notas = []
+for i in range(cantidad):
+    nota = float(input(f"Ingrese la nota {i+1}: "))
+promedio = sum(notas) / cantidad
+print(f"El promedio es: {round(promedio, 2)}")
+if promedio >= 4.0:
+    print("el promedio es suficiente para aprovar")
+else:
+    print("el promedio no es suficuente para aprobar.")
